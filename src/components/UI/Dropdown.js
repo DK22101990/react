@@ -1,6 +1,6 @@
-import { Fragment } from 'react'
-import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, SelectorIcon } from '@heroicons/react/solid'
+import { Fragment } from 'react';
+import { Listbox, Transition } from '@headlessui/react';
+import { CheckIcon, SelectorIcon } from '@heroicons/react/solid';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -19,9 +19,9 @@ function Dropdown(props) {
         <Listbox value={value} onChange={setMethodForValue}>
             {({ open }) => (
                 <>
-                    <div className="m-3 relative inline-flex flex-row bg-gray-50">
+                    <div className="relative inline-block flex-row bg-gray-50">
                         {title && <Listbox.Label className="m-1 text-sm font-medium text-gray-700">{title}</Listbox.Label>}
-                        <Listbox.Button className="relative  bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <Listbox.Button className="relative bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                             <span className="flex items-center">
                                 <span className="ml-3 block truncate">{option}</span>
                             </span>
